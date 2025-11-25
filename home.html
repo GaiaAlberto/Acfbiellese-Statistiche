@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>ACF Biellese Femminile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOGO + NOME SQUADRA -->
+    <div class="team-header">
+        <img src="logo.jpeg" alt="Logo Squadra" class="logo">
+        <h1>ACF Biellese Femminile</h1>
+    </div>
+
+    <!-- SELEZIONE GIOCATRICE -->
+    <div class="selector">
+        <h3>Inserisci il nome della giocatrice</h3>
+        <input type="text" id="manualName" placeholder="Es. Martina Rossi">
+        <button onclick="searchPlayer()">Cerca</button>
+
+        <h3>Oppure scegli dal menù</h3>
+        <select id="dropdown" onchange="selectFromDropdown()">
+            <option value="">-- Seleziona giocatrice --</option>
+        </select>
+    </div>
+
+    <!-- SCHEDA GIOCATRICE -->
+    <div id="playerCard" class="card hidden"></div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <p>ACF Biellese Femminile © 2025</p>
+        <p>Contatti: <strong>acfbiellese1969@gmail.com</strong> | Tel: <strong>+39 349 344 8014</strong></p>
+    </footer>
+
+    <script src="players.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

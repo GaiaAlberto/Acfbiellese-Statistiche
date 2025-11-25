@@ -1,0 +1,181 @@
+/* ====== COLORI ====== */
+:root {
+    --purple: #592c82;
+    --purple-dark: #3e1f5c;
+    --white: #ffffff;
+    --gray-light: #f4f4f7;
+    --gray-mid: #d4d4dd;
+    --gray-dark: #3a3a3a;
+}
+
+/* ====== BODY ====== */
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: var(--gray-light);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ====== LOGO + NOME SQUADRA ====== */
+.team-header {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-header .logo {
+    height: 80px; /* dimensione logo */
+}
+
+.team-header h1 {
+    color: var(--purple);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* ====== SELEZIONE GIOCATRICE ====== */
+.selector {
+    margin: 25px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 450px;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.selector h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--purple);
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 15px 0;
+    border-radius: 6px;
+    border: 1px solid var(--gray-mid);
+    font-size: 14px;
+    background: var(--gray-light);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: var(--purple);
+    border: none;
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: var(--purple-dark);
+}
+
+/* ====== CARD GIOCATRICE ====== */
+.card {
+    background: var(--white);
+    margin: 25px auto;
+    width: 80%;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 4px solid var(--purple);
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    text-align: center; /* centrato */
+}
+
+.card h2 {
+    color: var(--purple);
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card img {
+    width: 70%;      /* foto più piccola */
+    max-width: 220px;
+    border-radius: 10px;
+    border: 2px solid var(--gray-mid);
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 15px;
+    color: var(--gray-dark);
+    margin: 5px 0;
+}
+
+/* ====== FOOTER ====== */
+.main-footer {
+    background: var(--white);
+    border-top: 3px solid var(--purple);
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: var(--purple-dark);
+}
+
+.main-footer p {
+    margin: 4px 0;
+}
+
+/* ====== NASCONDERE ELEMENTI ====== */
+.hidden {
+    display: none;
+}
+/* ====== CENTRATURA PAGINA LOGIN ====== */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* altezza viewport */
+    gap: 30px;          /* spazio tra logo e box login */
+    background: var(--gray-light);
+}
+
+/* Logo e nome squadra già definiti */
+.team-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-header .logo {
+    height: 80px;
+}
+
+.team-header h1 {
+    color: var(--purple);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Login box già definito, mantiene stile pulito */
+.login-box {
+    background: var(--white);
+    padding: 35px 30px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.07);
+    border-top: 4px solid var(--purple);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: var(--purple);
+    font-size: 22px;
+    font-weight: 600;
+}
